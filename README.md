@@ -1,0 +1,2 @@
+# Superconf
+Super Configurable extension
