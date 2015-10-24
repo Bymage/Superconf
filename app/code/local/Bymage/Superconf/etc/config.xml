@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Bymage_Superconf>
+            <version>1.0.0</version>
+        </Bymage_Superconf>
+    </modules>
+
+    
+    <frontend>
+        <routers>
+            <bysuperconf>
+                <use>standard</use>
+                <args>
+                    <module>Bymage_Superconf</module>
+                    <frontName>bysuperconf</frontName>
+                </args>
+            </bysuperconf>
+        </routers>
+    </frontend>
+    
+    
+    <adminhtml>
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <bysuperconf translate="title" module="bysuperconf">
+                                            <title>Superconf</title>
+                                        </bysuperconf>
+                                    </children>
+                                </config>
+                            </children>
+                        </system> 
+                     </children>
+                </admin> 
+            </resources>
+        </acl>
+    </adminhtml>
+    
+    
+    
+    <global>
+        <models>
+            <bysuperconf>
+                <class>Bymage_Superconf_Model</class>
+            </bysuperconf>
+        </models>
+        
+		<resources>
+             <bysuperconf_setup>
+                <setup>
+                    <module>Bymage_Superconf</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </bysuperconf_setup>
+		    <bysuperconf_write>
+		        <connection><use>core_write</use></connection>
+		    </bysuperconf_write>
+		    <bysuperconf_read>
+		        <connection><use>core_read</use></connection>
+		    </bysuperconf_read>
+		</resources>
+		  
+        
+        <blocks>
+            <bysuperconf>
+                <class>Bymage_Superconf_Block</class>
+            </bysuperconf>
+
+        </blocks>
+        
+        <helpers>
+            <bysuperconf>
+                <class>Bymage_Superconf_Helper</class>
+            </bysuperconf>
+            <catalog>
+                <rewrite>
+                    <product>Bymage_Superconf_Helper_Data</product>
+                </rewrite>
+            </catalog>
+        </helpers>
+
+        
+    </global>
+
+    <default>
+        <bysuperconf>
+            <general>
+                <enable>1</enable>
+            </general>
+        </bysuperconf>
+    </default>
+</config>

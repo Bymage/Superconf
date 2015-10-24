@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <translate>
+        <modules>
+            <Bymage_Superconf>
+                <files>
+                    <default>Bymage_Superconf.csv</default>
+                </files>
+            </Bymage_Superconf>
+        </modules>
+    </translate>
+</config>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+* @author Bymage Team
+* @copyright Copyright (c)  2015 Bymage (http://www.bymage.com)
+* @package Bymage_Superconf
+*/
+-->
+<config>
+    <modules>
+        <Bymage_Superconf>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Bymage_Superconf>
+    </modules>
+</config>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <bymage translate="label" module="ambase">
+            <label>BYMAGE - bymage.com</label>
+            <sort_order>400</sort_order>
+        </bymage>
+    </tabs>
+    <sections>
+        <bysuperconf translate="label" module="bysuperconf">
+            <label>Super Configurable</label>
+            <tab>bymage</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>11032</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>General Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>5</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enable translate="label comment">
+                            <label>Enable Extension</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </enable>                      
+                    </fields>
+                </general>
+            </groups>
+        </bysuperconf>
+    </sections>
+</config>
