@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
     <tabs>
-        <bymage translate="label" module="ambase">
+        <bymage translate="label" module="bysuperconf">
             <label>BYMAGE - bymage.com</label>
             <sort_order>400</sort_order>
         </bymage>
